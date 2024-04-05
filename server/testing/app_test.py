@@ -25,7 +25,7 @@ class TestApp:
                 data={
                     "name": "Apple Fritter",
                     "price": 2,
-                    "bakery_id": 5,
+                    "bakery_id": 1,
                 }
             )
 
