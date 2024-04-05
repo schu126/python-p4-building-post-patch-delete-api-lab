@@ -65,9 +65,9 @@ def baked_goods():
         return goods, 201
 
     elif request.method == 'POST':
-        json_data = request.get_json()
+        form_data = request.form
         new_good = BakedGood()
-        for key, value in json_data.items():
+        for key, value in form_data.items():
             setattr(new_good, key, value)
 
         # new_good = BakedGood(
